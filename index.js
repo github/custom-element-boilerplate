@@ -1,4 +1,4 @@
-/* @flow */
+/* @flow strict */
 
 class CustomElementElement extends HTMLElement {
   constructor() {
@@ -6,7 +6,7 @@ class CustomElementElement extends HTMLElement {
   }
 
   connectedCallback() {
-    this.textContent = '<custom-element>'
+    this.textContent = ':wave:'
   }
 
   disconnectedCallback() {}
