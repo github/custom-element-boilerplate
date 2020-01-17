@@ -5,6 +5,6 @@ declare global {
     CustomElementElement: typeof CustomElementElement
   }
   interface HTMLElementTagNameMap {
-    'custom-boilerplate': CustomElementBoilerplate
+    'custom-element': CustomElementElement
   }
 }
