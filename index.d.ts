@@ -4,4 +4,7 @@ declare global {
   interface Window {
     CustomElementElement: typeof CustomElementElement
   }
+  interface HTMLElementTagNameMap {
+    'custom-element': CustomElementElement
+  }
 }
