@@ -1,23 +1,10 @@
 {
   "extends": [
     "plugin:github/browser",
-    "plugin:github/es6"
+    "plugin:github/es6",
+    "plugin:github/typescript"
   ],
   "globals": {
     "CustomElementElement": "readonly"
-  },
-  "overrides": [
-    {
-      "files": "test/*.js",
-      "rules": {
-        "github/unescaped-html-literal": "off"
-      }
-    },
-    {
-      "files": "*.ts",
-      "extends": [
-        "plugin:github/typescript"
-      ]
-    }
-  ]
+  }
 }
