@@ -1,15 +1,13 @@
-/* @flow strict */
-
 class CustomElementElement extends HTMLElement {
-  constructor() {
-    super()
-  }
-
   connectedCallback() {
     this.textContent = ':wave:'
   }
+}
 
-  disconnectedCallback() {}
+declare global {
+  interface Window {
+    CustomElementElement: typeof CustomElementElement
+  }
 }
 
 export default CustomElementElement

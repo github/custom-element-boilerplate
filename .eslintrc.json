@@ -1,17 +1,23 @@
 {
   "extends": [
     "plugin:github/browser",
-    "plugin:github/es6",
-    "plugin:github/flow"
+    "plugin:github/es6"
   ],
-  "parser": "babel-eslint",
+  "globals": {
+    "CustomElementElement": "readonly"
+  },
   "overrides": [
     {
-      "files": "test/**/*.js",
+      "files": "test/*.js",
       "rules": {
-        "flowtype/require-valid-file-annotation": "off",
         "github/unescaped-html-literal": "off"
       }
+    },
+    {
+      "files": "*.ts",
+      "extends": [
+        "plugin:github/typescript"
+      ]
     }
   ]
 }

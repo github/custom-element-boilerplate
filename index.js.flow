@@ -1,5 +1,0 @@
-/* @flow strict */
-
-declare module '@github/custom-element-element' {
-  declare export default class CustomElementElement extends HTMLElement { }
-}
