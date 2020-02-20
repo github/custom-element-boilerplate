@@ -6,15 +6,10 @@
 </head>
 <body>
   <custom-element></custom-element>
-  
-  <script>
-    const script = document.createElement('script')
-    if (window.location.hostname.endsWith('github.io')) {
-      script.src = "https://unpkg.com/@github/custom-element-boilerplate@latest/dist/index.umd.js"
-    } else {
-      script.src = "../dist/index.umd.js"
-    }
-    document.body.appendChild(script)
+
+  <script type="module">
+    // import 'https://unpkg.com/@github/custom-element-boilerplate@latest/dist/index.js'
+    import '../dist/index.js'
   </script>
 </body>
 </html>

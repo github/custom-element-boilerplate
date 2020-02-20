@@ -13,7 +13,9 @@ describe('custom-element', function() {
 
   describe('after tree insertion', function() {
     beforeEach(function() {
-      document.body.innerHTML = '<custom-element></custom-element>'
+      document.body.innerHTML = `
+        <custom-element></custom-element>
+      `
     })
 
     afterEach(function() {
