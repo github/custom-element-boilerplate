@@ -1,5 +1,5 @@
 class CustomElementElement extends HTMLElement {
-  connectedCallback() {
+  connectedCallback(): void {
     this.textContent = ':wave:'
   }
 }
