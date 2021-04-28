@@ -2,10 +2,10 @@
   "name": "@github/custom-element-element",
   "version": "0.0.1",
   "description": "Boilerplate for creating a custom element.",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/custom-element.js",
+  "module": "dist/custom-element.js",
   "type": "module",
-  "types": "dist/index.d.ts",
+  "types": "dist/custom-elements.d.ts",
   "license": "MIT",
   "repository": "github/custom-element-boilerplate",
   "files": [
