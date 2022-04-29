@@ -1,3 +1,6 @@
+import {assert, fixture, html} from '@open-wc/testing'
+import '../src/custom-element'
+
 describe('custom-element', function () {
   describe('element creation', function () {
     it('creates from document.createElement', function () {
@@ -12,16 +15,8 @@ describe('custom-element', function () {
   })
 
   describe('after tree insertion', function () {
-    beforeEach(function () {
-      // eslint-disable-next-line github/no-inner-html
-      document.body.innerHTML = `
-        <custom-element></custom-element>
-      `
-    })
-
-    afterEach(function () {
-      // eslint-disable-next-line github/no-inner-html
-      document.body.innerHTML = ''
+    beforeEach(async function () {
+      await fixture(html` <custom-element></custom-element>`)
     })
 
     it('initiates', function () {
