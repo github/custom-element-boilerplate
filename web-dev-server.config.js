@@ -1,5 +1,5 @@
-import { esbuildPlugin } from '@web/dev-server-esbuild';
+import {esbuildPlugin} from '@web/dev-server-esbuild'
 
 export default {
-  plugins: [esbuildPlugin({ ts: true })],
-};
+  plugins: [esbuildPlugin({ts: true})]
+}
