@@ -18,12 +18,15 @@
     "build": "tsc",
     "pretest": "npm run build",
     "test": "karma start karma.config.cjs",
+    "start": "web-dev-server --node-resolve --open --watch --app-index=examples/index.html --root-dir=. --esbuild-target auto",
     "prepublishOnly": "npm run build",
     "postpublish": "npm publish --ignore-scripts --@github:registry='https://npm.pkg.github.com'"
   },
   "prettier": "@github/prettier-config",
   "devDependencies": {
     "@github/prettier-config": "0.0.4",
+    "@web/dev-server": "^0.1.31",
+    "@web/dev-server-esbuild": "^0.3.0",
     "chai": "^4.3.4",
     "chromium": "^3.0.3",
     "eslint": "^8.14.0",
