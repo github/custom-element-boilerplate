@@ -21,7 +21,7 @@ describe('custom-element', function () {
 
     it('initiates', function () {
       const ce = document.querySelector('custom-element')
-      assert.equal(ce.textContent, ':wave:')
+      assert.equal(ce?.textContent, ':wave:')
     })
   })
 })
