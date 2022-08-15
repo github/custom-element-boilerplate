@@ -24,15 +24,19 @@
   },
   "prettier": "@github/prettier-config",
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.6.4",
+    "@github/cem-plugin-readme": "^0.0.1",
     "@github/prettier-config": "0.0.4",
     "@open-wc/testing": "^3.1.4",
     "@web/dev-server": "^0.1.31",
     "@web/dev-server-esbuild": "^0.3.0",
     "@web/test-runner": "^0.13.27",
+    "cem-plugin-vs-code-custom-data-generator": "^1.0.0-beta.6",
     "chromium": "^3.0.3",
     "eslint": "^8.14.0",
     "eslint-plugin-custom-elements": "^0.0.6",
     "eslint-plugin-github": "^4.3.6",
     "typescript": "^4.2.4"
-  }
+  },
+  "customElements": "custom-elements.json"
 }

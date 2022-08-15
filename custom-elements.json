@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/custom-element.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "An example Custom Element. This documentation ends up in the\nREADME so describe how this elements works here.\n\nYou can event add examples on the element is used with Markdown.\n\n```\n<custom-element></custom-element>\n```",
+          "name": "CustomElementElement",
+          "superclass": {
+            "name": "HTMLElement"
+          },
+          "tagName": "custom-element",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "CustomElementElement",
+            "module": "src/custom-element.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "custom-element",
+          "declaration": {
+            "name": "CustomElementElement",
+            "module": "src/custom-element.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
