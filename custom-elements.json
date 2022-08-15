@@ -1,5 +1,40 @@
 {
   "schemaVersion": "1.0.0",
   "readme": "",
-  "modules": []
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/custom-element.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "CustomElementElement",
+          "superclass": {
+            "name": "HTMLElement"
+          },
+          "tagName": "custom-element",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "CustomElementElement",
+            "module": "src/custom-element.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "custom-element",
+          "declaration": {
+            "name": "CustomElementElement",
+            "module": "src/custom-element.ts"
+          }
+        }
+      ]
+    }
+  ]
 }
