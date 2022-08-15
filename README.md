@@ -24,6 +24,15 @@ Include with a script tag:
 <script type="module" src="./node_modules/@github/custom-element-element/dist/index.js">
 ```
 
+An example Custom Element. This documentation ends up in the
+README so describe how this elements works here.
+
+You can event add examples on the element is used with Markdown.
+
+```
+<custom-element></custom-element>
+```
+
 ## Browser support
 
 Browsers without native [custom element support][support] require a [polyfill][].
