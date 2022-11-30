@@ -8,9 +8,30 @@
     "plugin:custom-elements/recommended"
   ],
   "rules": {
+    "import/extensions": ["error", "always"],
+    "import/no-unresolved": "off",
     "custom-elements/file-name-matches-element": ["error", {"suffix": "Element"}],
     "custom-elements/tag-name-matches-class": ["error", {"suffix": "Element"}]
   },
+  "overrides": [
+    {
+      "files": "src/*-define.ts",
+      "rules": {
+        "@typescript-eslint/no-namespace": "off"
+      }
+    },
+    {
+      "files": "test/**/*.js",
+      "env": {
+        "mocha": true
+      },
+      "rules": {
+        "github/unescaped-html-literal": "off",
+        "github/no-inner-html": "off",
+        "i18n-text/no-en": "off"
+      }
+    }
+  ],
   "globals": {
     "CustomElementElement": "readonly"
   }
