@@ -4,5 +4,5 @@ import {readme} from '@github/cem-plugin-readme'
 export default {
   packagejson: true,
   globs: ['src/*-element.ts'],
-  plugins: [readme(), generateCustomData()]
+  plugins: [readme(), generateCustomData()],
 }
