@@ -1,4 +1,4 @@
-name: Accessibility-alt-text-bot
+name: accessibility-alt-text-bot
 on:
   issues:
     types: [opened, edited]
