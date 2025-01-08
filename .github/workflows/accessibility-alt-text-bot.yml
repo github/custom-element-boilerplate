@@ -5,11 +5,11 @@ on:
   pull_request:
     types: [opened, edited]
   issue_comment:
-    types: [created, edited]
+    types: [created, edited, deleted]
   discussion:
     types: [created, edited]
   discussion_comment:
-    types: [created, edited]
+    types: [created, edited, deleted]
 
 permissions:
   issues: write
@@ -20,4 +20,4 @@ jobs:
   accessibility_alt_text_bot:
     runs-on: ubuntu-latest
     steps:
-       - uses: github/accessibility-alt-text-bot@v1.4.0
+       - uses: github/accessibility-alt-text-bot@v1.6.0
