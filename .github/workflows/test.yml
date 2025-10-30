@@ -3,6 +3,8 @@ name: Node CI
 on: [push]
 jobs:
   build:
+    permissions:
+      contents: read
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
